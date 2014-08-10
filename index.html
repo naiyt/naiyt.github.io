@@ -1,1 +1,18 @@
-Testing
+---
+layout: layout
+---
+
+<section class="content">
+  <br>
+  <ul class="listing">
+    {% for post in site.posts %}
+      {% unless post.draft %}
+      <li>
+        <span>{{ post.date | date: "%B %e, %Y" }}</span> <a href="{{ post.url }}" class='post-title'>{{ post.title }}</a>
+      </li>
+      <br>
+      {{ post.content }}
+      {% endunless %}
+    {% endfor %}
+  </ul>
+</section>
