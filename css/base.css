@@ -208,3 +208,6 @@ a {
 .post-title {
   font-size: 25px;
 }
+.my-fa-twitter:before {
+  content: "\f099";
+}
