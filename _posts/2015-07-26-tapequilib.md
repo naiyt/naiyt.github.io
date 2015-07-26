@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Codility - TapeEquilibrium in Ruby
+date: 2015-07-26 15:00:00
 ---
 
 [Intro to this series](http://blog.natecollings.com/posts/codility/)
