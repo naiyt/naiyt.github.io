@@ -23,19 +23,19 @@ When I first started doing code challenges I would typically ignore the the inpu
 
 A naive algorithm might be:
 
-* Iterate through each element in `N`, keeping track of the current sum
-* For each element, iterate through the rest of the array to find the right pivot value
-* Find the difference, and store it as min if necessary
+- Iterate through each element in `N`, keeping track of the current sum
+- For each element, iterate through the rest of the array to find the right pivot value
+- Find the difference, and store it as min if necessary
 
 This would be in `O(n^2)`, which is much too slow for the input sizes. (Ick, nested for loops.)
 
 The better solution is to:
 
-* Iterate through the array once to get the total sum
-* Init the left pivot to be `A[0]` and the right pivot to be `sum - A[0]`
-* Init min to be the absolute difference of the right and left pivots
-* Iterate through the array, and add the current value to the left and subtract it from the right
-* Find the absolute differences again, and store as min if it is less than the current min
+- Iterate through the array once to get the total sum
+- Init the left pivot to be `A[0]` and the right pivot to be `sum - A[0]`
+- Init min to be the absolute difference of the right and left pivots
+- Iterate through the array, and add the current value to the left and subtract it from the right
+- Find the absolute differences again, and store as min if it is less than the current min
 
 My solution in Ruby looked like this:
 
